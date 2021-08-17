@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import PrePicture from '../public/images/';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -10,8 +11,7 @@ class MyDocument extends Document {
     const meta = {
       title: 'Pablo Pérez - Software Developer',
       description: 'I\'m still learning...',
-      image:
-        'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png'
+      image: PrePicture,
     }
 
     return (

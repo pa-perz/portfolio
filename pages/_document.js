@@ -9,8 +9,8 @@ class MyDocument extends Document {
   render() {
     const meta = {
       title: 'Pablo Pérez - Software Developer',
-      description: 'I\'m still learning...',
-      image: '/images/prepic.jpg'
+      description: 'Software Developer and Computer Engineering Student',
+      image: 'https://images.unsplash.com/photo-1522609885-3902c3d44d6a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80'
     }
 
     return (
@@ -23,10 +23,10 @@ class MyDocument extends Document {
           <meta property="og:title" content={meta.title} />
           <meta property="og:image" content={meta.image} />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@yourname" />
+          <meta name="twitter:site" content="@pa-perz" />
           <meta name="twitter:title" content={meta.title} />
           <meta name="twitter:description" content={meta.description} />
-          <meta name="twitter:image" content={meta.image} />
+          <meta name="twitter:image" src={meta.image} />
         </Head>
         <body>
           <Main />

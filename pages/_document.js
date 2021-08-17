@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import PrePicture from '../public/images/prepic.jpg';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -11,7 +10,7 @@ class MyDocument extends Document {
     const meta = {
       title: 'Pablo Pérez - Software Developer',
       description: 'I\'m still learning...',
-      image: PrePicture,
+      image: '/images/prepic.jpg'
     }
 
     return (
